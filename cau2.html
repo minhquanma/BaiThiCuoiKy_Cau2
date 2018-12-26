@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+.container {
+  overflow:auto;
+}
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: left;
+  width: 15%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.content {
+  float: left;
+  width: 65%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.content img {
+  width: 100%;
+}
+.info {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+.footer {
+  background-color: lightgrey;
+  text-align: center;
+  padding: 10px;
+  margin-top: 7px;
+  font-size: 12px;
+}
+
+@media only screen and (max-width:768px) {
+  .content {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:414px) {
+  .menu,
+  .content,
+  .info {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <ul class="menu">
+    <li class="menuitem">The Walk</li>
+    <li class="menuitem">Transport</li>
+    <li class="menuitem">History</li>
+    <li class="menuitem">Gallery</li>
+  </ul>
+
+  <div class="content">
+    <h2>The Walk</h2>
+    <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending on the weather conditions and your physical shape.</p>
+    <img src="PC2.gif">
+  </div>
+
+  <div class="info">
+    <h2>What?</h2>
+    <p>Cinque Terre comprises five villages: Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+    <h2>Where?</h2>
+    <p>On the northwest cost of the Italian Riviera, north of the city La Spezia.</p>
+    <h2>Price?</h2>
+    <p>The Walk is free!</p>
+  </div>
+</div>
+
+
+<div class="footer"> This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content respond to the resizing.</div>
+
+</body>
+</html>
